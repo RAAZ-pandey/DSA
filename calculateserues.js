@@ -8,6 +8,7 @@ function calculateAlternate(n)
   {
     sum += (i % 2 === 0) ? -i : i;
   }
-  
+  console.log(sum);
 }
 
+calculateAlternate(10);
