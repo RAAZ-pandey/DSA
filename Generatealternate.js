@@ -11,3 +11,5 @@ function generateSeries() {
 
    console.log(result.join(" "));
 }
+
+generateSeries();
