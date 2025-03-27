@@ -28,3 +28,5 @@ function fibonacciPrimes(n)
     }
   }
 }
+
+fibonacciPrimes(10);
