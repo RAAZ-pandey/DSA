@@ -1,3 +1,6 @@
+// 1, 2, 4, 7, 11, 16.....n
+
+
 function printSequence(n)
 {
   let num = 1, diff = 1;
@@ -8,3 +11,5 @@ function printSequence(n)
     diff++;
   }
 }
+
+printSequence(15);
