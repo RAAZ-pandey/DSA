@@ -11,3 +11,10 @@ function isArmstrong(num)
   return sum == num;
 }
 
+for (let num = 1; num<= 500; num++)
+{
+  if(isArmstrong(num))
+  {
+    console.log(num);
+  }
+}
