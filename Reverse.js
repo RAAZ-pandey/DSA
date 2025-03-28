@@ -14,3 +14,6 @@ function reverse(num)
   return isNegative ? -reversed : reversed; //restore negative sign if needed
 }
 
+let num = 12345; // chnage this toi any test case number
+console.log("Original:",num);
+console.log("Reversed number:", reverse(num));
