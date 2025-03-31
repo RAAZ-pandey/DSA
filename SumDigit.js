@@ -13,4 +13,4 @@ function sumOfDigits(num)
 }
 
 let num = 5478;
-console.log(num);
+console.log("Sum of digits:", sumOfDigits(num));
