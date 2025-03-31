@@ -20,3 +20,4 @@ function calculateSeries(limit)
   return sum;
 }
 
+console.log(calculateSeries(10));
