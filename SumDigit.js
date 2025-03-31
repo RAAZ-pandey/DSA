@@ -1,4 +1,4 @@
-function sumOfDigits(sum)
+function sumOfDigits(num)
 {
   let sum = 0;
   while (num > 0)
@@ -11,3 +11,6 @@ function sumOfDigits(sum)
   }
   return sum;
 }
+
+let num = 5478;
+console.log(num);
