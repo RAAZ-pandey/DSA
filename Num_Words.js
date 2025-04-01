@@ -23,3 +23,6 @@ function numToWords(num)
 
   console.log(result.join(" "));
 }
+
+const input = prompt("Enter an integer number:");
+numToWords(parseInt(input));
