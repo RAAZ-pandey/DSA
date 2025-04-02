@@ -9,3 +9,5 @@ function countDigits(n)
   return count;
 
 }
+
+console.log(countDigits(5932548));
