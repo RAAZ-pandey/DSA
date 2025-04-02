@@ -8,3 +8,5 @@ function sumFirstLAstDigit(n)
    }
    return firstDigit + lastDigit;
 }
+
+console.log(sumFirstLAstDigit(932561));
