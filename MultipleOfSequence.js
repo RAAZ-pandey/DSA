@@ -12,3 +12,5 @@ function generateSequence(n)
     b =next;
   }
 }
+
+generateSequence(10);
