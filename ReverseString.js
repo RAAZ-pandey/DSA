@@ -12,4 +12,9 @@
 
 // with use of predefined methods
 
+let original = "LUMA";
+let reversed = original.split("").reverse().join("");
+
+console.log("Original string:", original);
+console.log("Reversed string:", reversed);
 
