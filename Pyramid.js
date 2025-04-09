@@ -17,5 +17,10 @@ function printPyramid(rows) {
     for (let j = i - 2; j >= 0; j--) {
       str += String.fromCharCode(65 + j);
     }
+
+    console.log(str);
   }
 }
+
+let rows = 10;
+printCharacterPyramid(rows);
