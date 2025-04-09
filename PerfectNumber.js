@@ -18,3 +18,17 @@ function isPerfectNumber(num)
     return sum === num;
   
 }
+
+function Display(limit)
+{
+  console.log(`Perfect numbers from 1 to ${limit}:`);
+    
+  for (let i = 1; i<= limit; i++)
+  {
+    if (isPerfectNumber(i))
+    {
+      console.log(i);
+    }
+  }
+}
+
