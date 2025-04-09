@@ -7,7 +7,14 @@ function printPyramid(rows) {
       str += ' ';
     }
 
+    // Ascending characters
     for (let j = 0; j < i; j++) {
+      str += String.fromCharCode(65 + j);
+    }
+
+    
+    // Descending characters
+    for (let j = i - 2; j >= 0; j--) {
       str += String.fromCharCode(65 + j);
     }
   }
