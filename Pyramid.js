@@ -23,4 +23,4 @@ function printPyramid(rows) {
 }
 
 let rows = 10;
-printCharacterPyramid(rows);
+printPyramid(rows);
