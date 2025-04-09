@@ -32,3 +32,5 @@ function Display(limit)
   }
 }
 
+let limit = 10000;
+Display(limit);
