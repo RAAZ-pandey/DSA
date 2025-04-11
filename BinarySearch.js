@@ -17,3 +17,15 @@ function binarySearch(arr, target) {
   return -1; // Element not found
 
 }
+
+// Example usage:
+const sortedArray = [2, 5, 8, 12, 16, 23, 38, 56, 72];
+const target = 38;
+
+const result = binarySearch(sortedArray, target);
+
+if (result !== -1) {
+  console.log(`Element found at index ${result}`);
+} else {
+  console.log("Element not found");
+}
