@@ -9,4 +9,6 @@ function isPalindrome(num)
     reversed = reversed * 10 + digit ;
     num = Math.floor(num / 10);
   }
+
+  return original === reversed;
 }
