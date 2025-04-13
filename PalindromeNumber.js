@@ -12,3 +12,8 @@ function isPalindrome(num)
 
   return original === reversed;
 }
+
+// Example usage:
+console.log(isPalindrome(121));     // true
+console.log(isPalindrome(1875781));   // true
+console.log(isPalindrome(123));     // false
