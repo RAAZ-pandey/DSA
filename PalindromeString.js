@@ -14,3 +14,8 @@ function isStringPalindrome(str)
   }
   return true;
 }
+
+// Example usage:
+console.log(isStringPalindrome("madam"));   // true
+console.log(isStringPalindrome("racecar")); // true
+console.log(isStringPalindrome("hello"));   // false
