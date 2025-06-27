@@ -4,7 +4,7 @@ import java.util.*;
 
 class TwoSum {
     //1st method using brute force method , this way time complexicity will be O(n^2)
-    
+
   int[] twoSumBruteForce(int[] nums, int target) {
 
     for (int i = 0; i < nums.length; i++) {
@@ -46,6 +46,8 @@ class TwoSum {
     return result;
   }
 
+  //2nd and most efficient way. use hashmap, using this method time complexicity will be minimum O(N).
+  
   int[] twoSumHashing(int[] nums, int target) {
 
     // Create a HashMap
