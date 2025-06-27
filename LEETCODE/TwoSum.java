@@ -1,5 +1,6 @@
 import java.util.*;
 
+// this code contains only function solution of leetcode based on testcases , independently this code won't give any output
 
 class TwoSum {
 
