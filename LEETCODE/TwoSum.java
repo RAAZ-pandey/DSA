@@ -3,7 +3,8 @@ import java.util.*;
 // this code contains only function solution of leetcode based on testcases , independently this code won't give any output
 
 class TwoSum {
-
+    //1st method using brute force method , this way time complexicity will be O(n^2)
+    
   int[] twoSumBruteForce(int[] nums, int target) {
 
     for (int i = 0; i < nums.length; i++) {
