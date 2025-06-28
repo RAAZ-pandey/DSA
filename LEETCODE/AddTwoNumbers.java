@@ -24,7 +24,10 @@ public class AddTwoNumbers {
         l2 = l2.next;
       }
 
-      
+      carry = sum / 10;    // Get sum and carry
+      sum = sum % 10;
+      ptr.next = new ListNode(sum);
+      ptr = ptr.next;
     }
 
     if (carry == 1) ptr.next = new ListNode(1);
