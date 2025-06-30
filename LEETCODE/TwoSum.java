@@ -46,7 +46,7 @@ class TwoSum {
     return result;
   }
 
-  //2nd and most efficient way. use hashmap, using this method time complexicity will be minimum O(N).
+  //2nd and most efficient way. use hashmap & using this method time complexicity will be minimum O(N).
   
   int[] twoSumHashing(int[] nums, int target) {
 
