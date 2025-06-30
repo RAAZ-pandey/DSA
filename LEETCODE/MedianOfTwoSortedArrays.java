@@ -28,7 +28,21 @@ public class MedianOfTwoSortedArrays {
             int r1 = (cut1==n1)?Integer.MAX_VALUE:nums1[cut1];
             int r2 = (cut2==n2)?Integer.MAX_VALUE:nums2[cut2];
 
-            
+            // check if cut is valid
+            if(l1 <= r2 && l2 <= r1){
+                // if N is odd, only one median
+                if(N%2!=0){
+                    return (double) Math.min(r1,r2);
+                }
+                // else if N is even, two medians, so take average
+                else {
+                    return ((Math.max(l1,l2) + Math.min(r1,r2))/2.0);
+                }
+            } else if (l1>r2) {
+                end = cut1-1;
+            } else{
+                start = cut1+1;
+            }
         }
     return 0.0; // to avoid error
     }
