@@ -24,7 +24,7 @@ public class LongestPalindromicSubstring {
         LPS = palindrome;
       }
 
-      // Consider even length
+      // Consider even length of string
       low = i-1;
       high = i;
       while(str.charAt(low) == str.charAt(high)) {
