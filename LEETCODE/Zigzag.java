@@ -23,7 +23,7 @@ public class Zigzag {
         {
             res += str;
         }
-     return res;
+     
 
     }
 }
