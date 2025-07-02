@@ -1,5 +1,5 @@
 public class Zigzag {
-  class Solution {
+  
     public String convert(String s, int numRows) {
         String ans[] = new String[numRows];
         for(int i=0; i < numRows; i++)
@@ -27,4 +27,4 @@ public class Zigzag {
 
     }
 }
-}
+
