@@ -11,7 +11,14 @@ public class Reverse {
         int result = 0;
         int previousVal = 0;
         while(x > 0)
-       
+        {
+            int mod = x % 10;
+            result = result *10 + mod;
+            if(( result - mod)/10 != previousVal)
+             return 0;
+            previousVal = result;
+            x = x /10;
+        }
         return isNegativeNumber ? -1 * result : result;
     }
 }
