@@ -8,6 +8,9 @@ public class Reverse {
             x = -1 * x;
         }
 
+        int result = 0;
+        int previousVal = 0;
+        while(x > 0)
        
         return isNegativeNumber ? -1 * result : result;
     }
