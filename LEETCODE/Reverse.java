@@ -19,6 +19,6 @@ public class Reverse {
             previousVal = result;
             x = x /10;
         }
-       
+        return isNegativeNumber ? -1 * result : result;
     }
 }
