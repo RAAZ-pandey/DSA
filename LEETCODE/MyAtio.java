@@ -18,9 +18,7 @@ public class MyAtio {
         while(i < s.length()) {
             if(s.charAt(i) == ' ' || !Character.isDigit(s.charAt(i))) break;
             ans = ans * 10 + s.charAt(i)-'0';
-            // check the conditions
-            if(sign == -1 && -1*ans < MIN) return MIN;
-            if(sign == 1 && ans > MAX) return MAX;
+       
             
             i++;
         }
