@@ -1,4 +1,13 @@
 public class MyAtio {
-   
+    public int myAtoi(String s) {
+        if(s==null) return 0;
+
+        s=s.trim();
+        
+        if(s.length()==0) return 0;
+        
+        
+        return (int)(sign*ans);
+    }
 
 }
