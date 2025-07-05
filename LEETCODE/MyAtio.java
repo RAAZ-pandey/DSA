@@ -29,3 +29,31 @@ public class MyAtio {
     }
 
 }
+
+//optimizes solution with better time complexicity
+// public int myAtoi(String s) {
+//      int result = 0;
+//       int sign = 1;
+//        int i = 0; 
+//        while (i < s.length() && s.charAt(i) == ' ')
+//         i++;
+//          if (i < s.length() && s.charAt(i) == '-') {
+//              sign = -1; 
+//              i++;
+//         } else if (i < s.length() && s.charAt(i) == '+')
+//                  i++;
+//      for (i=0; i < s.length(); i++) {
+//          if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
+//           {
+//              if (sign == -1 && (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && s.charAt(i) >= '8')))
+//               return -2147483648;
+//           else if (sign == 1 && (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && s.charAt(i) >= '7')))
+//            return 2147483647;
+//      result *= 10;
+//     result += s.charAt(i) - '0';
+//  }
+//   else break; 
+// }
+// result *= sign; 
+// return result; 
+//  }
