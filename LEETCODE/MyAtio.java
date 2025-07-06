@@ -30,7 +30,7 @@ public class MyAtio {
 
 }
 
-//optimizes solution with better time complexicity
+//this is an optimizes solution with better time complexicity
 // public int myAtoi(String s) {
 //      int result = 0;
 //       int sign = 1;
