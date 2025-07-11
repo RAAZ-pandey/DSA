@@ -8,7 +8,13 @@ public class LongestCommonPrefix {
 
     StringBuilder result = new StringBuilder();
 
-    return result.toString();
+  
+
+    // Get the first and last strings
+    char[] first = strs[0].toCharArray();
+    char[] last = strs[strs.length - 1].toCharArray();
+
+
   }
 
 }
