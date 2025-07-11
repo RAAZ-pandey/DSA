@@ -24,6 +24,8 @@ public class LongestCommonPrefix {
 
     return result.toString();
 
+    // Leetcode best solution
+
       // if (strs == null || strs.length == 0) return "";
 
       //   String prefix = strs[0];
