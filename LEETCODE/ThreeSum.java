@@ -22,6 +22,14 @@ public class ThreeSum {
 
         if (sum == 0) {
 
+          // Add the set, and move to find other triplets
+          result.add(Arrays.asList(arr[i], arr[left], arr[right]));
+          left++;
+          right--;
+        } else if (sum < 0)
+          left++;
+        else
+          right--;
       }
     }
 
