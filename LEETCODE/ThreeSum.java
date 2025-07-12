@@ -17,7 +17,12 @@ public class ThreeSum {
       int left = i + 1;
       int right = arr.length - 1;
 
-     
+      while (left < right) {
+        int sum = arr[i] + arr[left] + arr[right];
+
+        if (sum == 0) {
+
+      }
     }
 
     return new ArrayList<>(result);
