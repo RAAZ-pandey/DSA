@@ -6,6 +6,10 @@ public class ThreeSum {
     
     if (arr == null || arr.length < 3) return new ArrayList<>();
 
+    // Sort the elements
+    Arrays.sort(arr);
+    Set<List<Integer>> result = new HashSet<>();
+
     return new ArrayList<>(result);
   }
 }
