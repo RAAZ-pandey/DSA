@@ -15,7 +15,17 @@ public class ThreeSumClosest {
       int left = i + 1;
       int right = arr.length - 1;
 
-      
+      while (left < right) {
+        int sum = arr[i] + arr[left] + arr[right];
+
+       
+        int diffToTarget = Math.abs(sum - target);
+        if (diffToTarget < minDifference) {
+          // update the result sum
+          resultSum = sum;
+          minDifference = diffToTarget;
+        }
+      }
     }
     return resultSum;
   }
