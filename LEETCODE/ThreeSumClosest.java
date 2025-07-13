@@ -4,7 +4,7 @@ public class ThreeSumClosest {
   
   int threeSumClosest(int[] arr, int target) {
 
-    // Sort the elements
+    // Sort the elements of array
     Arrays.sort(arr);
     int resultSum = arr[0] + arr[1] + arr[2];
     int minDifference = Integer.MAX_VALUE;
