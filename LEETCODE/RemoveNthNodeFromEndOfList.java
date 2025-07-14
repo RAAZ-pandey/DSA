@@ -18,7 +18,8 @@ public class RemoveNthNodeFromEndOfList {
       secondPtr = secondPtr.next;
     }
 
-   
+    // We now have to remove the node next of firstPtr
+    firstPtr.next = firstPtr.next.next;
 
     return dummy.next;
   }
