@@ -7,6 +7,11 @@ public class RemoveNthNodeFromEndOfList {
     ListNode firstPtr = dummy;
     ListNode secondPtr = dummy;
 
+    // Move secondPtr n spaces ahead
+    for (int i = 0; i < n; i++) {
+      secondPtr = secondPtr.next;
+    }
+
     
 
     return dummy.next;
