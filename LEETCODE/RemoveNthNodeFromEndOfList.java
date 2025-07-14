@@ -12,7 +12,13 @@ public class RemoveNthNodeFromEndOfList {
       secondPtr = secondPtr.next;
     }
 
-    
+    // Move both now, until the next of secondPtr is null
+    while(secondPtr.next != null) {
+      firstPtr = firstPtr.next;
+      secondPtr = secondPtr.next;
+    }
+
+   
 
     return dummy.next;
   }
