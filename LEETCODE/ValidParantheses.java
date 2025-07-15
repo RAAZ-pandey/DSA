@@ -6,7 +6,10 @@ public class ValidParantheses {
 
     Stack<Character> stack = new Stack<>();
 
-   
+    for (char c : s.toCharArray()) {
+
+     
+    }
     return stack.isEmpty();
 
   }
