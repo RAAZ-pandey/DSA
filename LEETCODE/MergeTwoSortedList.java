@@ -8,6 +8,8 @@ public class MergeTwoSortedList {
     // Create a copy of this node to iterate while solving the problem
     ListNode headNode = returnNode;
 
+    // Traverse till one of the list reaches the end
+    while (l1 != null && l2 != null) {
 
     // return the next node to sentinal node
     return headNode.next;
