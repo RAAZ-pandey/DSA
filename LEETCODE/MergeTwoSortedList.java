@@ -22,6 +22,12 @@ public class MergeTwoSortedList {
       returnNode = returnNode.next;
     }
 
+    // Append the remaining list
+    if (l1 == null) {
+      returnNode.next = l2;
+    } else if (l2 == null) {
+      returnNode.next = l1;
+    }
 
     // return the next node to sentinal node
     return headNode.next;
