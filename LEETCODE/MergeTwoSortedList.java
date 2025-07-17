@@ -11,6 +11,18 @@ public class MergeTwoSortedList {
     // Traverse till one of the list reaches the end
     while (l1 != null && l2 != null) {
 
+      // Compare the 2 values of lists
+      if (l1.val <= l2.val) {
+        returnNode.next = l1;
+        l1 = l1.next;
+      } else {
+        returnNode.next = l2;
+        l2 = l2.next;
+      }
+      returnNode = returnNode.next;
+    }
+
+
     // return the next node to sentinal node
     return headNode.next;
   }
