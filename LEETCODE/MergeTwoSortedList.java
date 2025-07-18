@@ -29,7 +29,7 @@ public class MergeTwoSortedList {
       returnNode.next = l1;
     }
 
-    // return the next node to sentinal node
+    // return the next node to the dummy node
     return headNode.next;
   }
 }
