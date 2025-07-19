@@ -11,7 +11,9 @@ public class MergeKLists {
         }
         while(minHeap.size() > 0){
             ListNode min = minHeap.poll();
-           
+            if(min.next != null){
+               minHeap.add(min.next); 
+            }
             curr.next = min;
             curr = curr.next;
         }
