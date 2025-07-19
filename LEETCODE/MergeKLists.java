@@ -9,7 +9,12 @@ public class MergeKLists {
         for(ListNode temp : lists){
             if(temp != null) minHeap.add(temp);
         }
-        
+        while(minHeap.size() > 0){
+            ListNode min = minHeap.poll();
+           
+            curr.next = min;
+            curr = curr.next;
+        }
         if(curr != null) curr.next = null;
         return head.next;
     }
