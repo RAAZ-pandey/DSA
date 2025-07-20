@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class PriceCompare {
     public static int maxProfit(int[] prices) {
