@@ -40,9 +40,8 @@ public class ReverseNodes{
 
         int cnt =0;
 
-  
 
-  
+        head.next = reverseKGroup(curr, k);
 
         return prev;
     }
