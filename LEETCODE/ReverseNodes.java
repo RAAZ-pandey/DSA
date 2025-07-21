@@ -24,7 +24,10 @@ public class ReverseNodes{
                 first = second;
                 second = next;
             }
-      
+            count-=k;
+            temp.next = first;
+            tempnext.next = second;
+            temp = tempnext;
             
         }
         return dummy.next;
