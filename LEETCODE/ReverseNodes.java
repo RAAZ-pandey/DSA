@@ -18,7 +18,13 @@ public class ReverseNodes{
             ListNode first = temp.next;
             ListNode second = first.next;
             
-           
+            while(nodes-- > 0){
+                ListNode next = second.next;
+                second.next = first;
+                first = second;
+                second = next;
+            }
+      
             
         }
         return dummy.next;
