@@ -45,7 +45,16 @@ public class ReverseNodes{
             cnt ++;
         }
 
+        if(cnt < k){
+            return head;
+        }
 
+        for(int i = k; i>0; i--){
+            t = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr =t;
+        }
 
         head.next = reverseKGroup(curr, k);
 
