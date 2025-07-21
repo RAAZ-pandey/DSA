@@ -10,7 +10,17 @@ public class ReverseNodes{
             temp = temp.next;
             count++;
         }
-       
+        temp = dummy;
+        while(temp.next!=null){
+            if(count<k) break;
+            int nodes = k-1;
+            ListNode tempnext = temp.next;
+            ListNode first = temp.next;
+            ListNode second = first.next;
+            
+           
+            
+        }
         return dummy.next;
     }
 }
