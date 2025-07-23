@@ -32,6 +32,11 @@ public class MaximumElement {
 
   static int max(int[] arr) {
 
+    // edge case
+    if (arr.length ==0 ) {
+      return -1;
+    }
+
     int maxVal = arr[0];
     for (int i = 1; i < arr.length; i++) {
        if (arr[i]>maxVal) {
