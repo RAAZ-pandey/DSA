@@ -8,6 +8,16 @@ public class MaximumElement {
 
    static int maxRange(int[] arr, int start, int end) {
 
+
+    //edge cases
+    if(start > end){
+      return -1;
+    }
+
+    if (arr == null) {
+      return -1;
+    }
+
     int maxVal = arr[0];
     for (int i = start; i < end; i++) {
        if (arr[i]>maxVal) {
