@@ -1,4 +1,11 @@
 public class RemoveDuplicatesFromSortedArray {
+   public static void main(String[] args)
+    {
+        int nums[]={0,3,3,4,4,5,5};
+        System.out.println(removeDuplicates(nums));
+
+    }
+
 
    public static int removeDuplicates(int[] nums)
    {
