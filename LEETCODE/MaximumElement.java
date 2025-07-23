@@ -2,8 +2,23 @@ public class MaximumElement {
   public static void main(String[] args) {
       int[] arr = { 10, 25, 58, 89, 96, 63, 32 };
 
-      System.out.println(max(arr));
+      System.out.println(maxRange(arr, 0, 3));
   }
+
+
+   static int maxRange(int[] arr, int start, int end) {
+
+    int maxVal = arr[0];
+    for (int i = start; i < end; i++) {
+       if (arr[i]>maxVal) {
+        maxVal = arr[i];
+       }
+    }
+
+    return maxVal;
+    
+  }
+  
 
   static int max(int[] arr) {
 
