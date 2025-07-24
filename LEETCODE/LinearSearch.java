@@ -6,8 +6,11 @@ public class LinearSearch {
     System.out.println(ans);
     int answer = searchElement(arr, 96);
     System.out.println(answer);
+    boolean found = search(arr, 63);
+    System.out.println(found);
   }
 
+  //search for element in array and retorn that element if found
   static int searchElement(int[] arr, int target){
     // Edge case if array has no element
       if(arr.length == 0){
@@ -21,6 +24,21 @@ public class LinearSearch {
         }
       }
       return -1;
+  }
+
+  
+  static boolean search(int[] arr, int target){
+    // Edge case if array has no element
+      if(arr.length == 0){
+        return false;
+      }
+        // search element in the array
+      for (int element : arr) {        //for each loop for efficient searching
+        if (element == target){
+          return true;
+        }
+      }
+      return false;
   }
 
 
