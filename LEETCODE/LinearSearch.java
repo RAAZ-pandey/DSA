@@ -4,7 +4,7 @@ public class LinearSearch {
 
     int ans = searchIndex(arr, 96);
     System.out.println(ans);
-    int answer = searchElement(arr, 96);
+    int answer = searchElement(arr, 9);
     System.out.println(answer);
     boolean found = search(arr, 63);
     System.out.println(found);
@@ -23,7 +23,8 @@ public class LinearSearch {
           return element;
         }
       }
-      return -1;
+      //-1 could be an element in the array so
+      return Integer.MIN_VALUE;
   }
 
   
