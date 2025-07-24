@@ -14,8 +14,8 @@ public class LinearSearch {
         return -1;
       }
         // search element in the array
-      for (int index = 0; index < arr.length; index++) {
-        int element = arr[index]; 
+     // for (int index = 0; index < arr.length; index++) {
+      for (int element : arr) {        //for each loop for efficient searching
         if (element == target){
           return element;
         }
