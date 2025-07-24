@@ -4,9 +4,24 @@ public class LinearSearch {
 
     int ans = searchIndex(arr, 96);
     System.out.println(ans);
-
+    int answer = searchElement(arr, 96);
+    System.out.println(answer);
   }
 
+  static int searchElement(int[] arr, int target){
+    // Edge case if array has no element
+      if(arr.length == 0){
+        return -1;
+      }
+        // search element in the array
+      for (int index = 0; index < arr.length; index++) {
+        int element = arr[index]; 
+        if (element == target){
+          return element;
+        }
+      }
+      return -1;
+  }
 
 
   // search for element and return the index at which element is found
