@@ -1,0 +1,29 @@
+public class BinarySearch {
+   public static void main(String[] args) {
+    int[] arr = {-17, -12, -5, 0, 3, 16, 34, 47, 58, 68, 99, 225};
+    int ans = binarysearch(arr, 99);
+    System.out.println(ans);
+   }
+
+   static int binarysearch(int[] arr, int target){
+
+    int start = 0;
+    int end = arr.length - 1;
+
+    while (start <= end) {
+      //find the middle element of array
+      int mid = (start + end) / 2;
+
+      if (target < arr[mid]) {
+        end = mid - 1;
+      } else if (target > arr[mid]) {
+          start = mid + 1;
+      }else 
+      // target found
+        return mid;
+
+    }
+
+    return -1;
+   }
+}
