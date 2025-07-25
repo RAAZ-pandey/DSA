@@ -12,7 +12,10 @@ public class BinarySearch {
 
     while (start <= end) {
       //find the middle element of array
-      int mid = (start + end) / 2;
+     // int mid = (start + end) / 2;
+      // sometime the value of mid can exceed the limit of integer value (possible)
+      //tacling that edge case
+      int mid = start + (end - start) / 2;
 
       if (target < arr[mid]) {
         end = mid - 1;
