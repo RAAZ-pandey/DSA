@@ -26,7 +26,7 @@ public class Ceiling {
         return mid;
 
     }
-
+  //  if target not found then returnibg the smallestelement greater than target
     return start;
    }
 }
