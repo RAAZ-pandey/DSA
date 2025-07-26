@@ -1,7 +1,7 @@
 public class CeilingBs {
    public static void main(String[] args) {
     int[] arr = {-17, -12, -5, 0, 3, 16, 34, 47, 58, 68, 99, 225};
-    int ans = search(arr, 15);
+    int ans = search(arr, 55);
     System.out.println(ans);
    }
 
@@ -9,6 +9,11 @@ public class CeilingBs {
 
     int start = 0;
     int end = arr.length - 1;
+
+        //EdgeCase :- what if there is no larger number than target in array
+      if(target > arr[end]){
+        return -1;
+      }
 
     while (start <= end) {
       //find the middle element of array
