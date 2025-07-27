@@ -11,7 +11,7 @@ public class PeakIndexInMountainArray {
               //it may be probable answer
                 end = mid;
             } else {
-                start = mid + 1;  // or this is the answer if you are in acending part of the array
+                start = mid + 1;  // or this is answer if you are in acending part of the array
             }
         }
         return start; //here start and end both can be the answer as both indicate the same value
