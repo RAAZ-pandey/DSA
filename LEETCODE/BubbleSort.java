@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class BubbleSort {
   public static void main(String[] args) {
-    int[] arr = {};
+    int[] arr = {5, 4, 3, 8, 1, -15, -1, 0, 87, -54};
     sorting(arr);
     System.out.println(Arrays.toString(arr));
 
@@ -12,7 +12,9 @@ public class BubbleSort {
   static void sorting(int[] arr) {
 
     boolean swapped = false;
+    // run the steps n-1 times 
     for (int i = 0; i < arr.length; i++) {
+      // for each step max will come at last index
       for (int j = 1; j < arr.length - i; j++) {
         // swap if element is smaller than previos element
         if (arr[j] < arr[j - 1]) {
@@ -23,6 +25,7 @@ public class BubbleSort {
           swapped = true;
         }
       }
+      // if array is not swapped means it is already sorted. so, break the loop
     if (!swapped) {
       break;
     }    
