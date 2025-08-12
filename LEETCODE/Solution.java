@@ -4,11 +4,11 @@ public class Solution {
    }
 
    static void patterns1(int num) {
-      for (int i = 0; i<= num; i++) {
-        for (int j = 0; j < i ; j++) {
+      for (int row = 0; row <= num; row++) {
+        for (int col = 0; col < row ; col++) {
            System.out.print("*");
         }
-        System.out.println();
+       System.out.println();
       }
    }
 }
