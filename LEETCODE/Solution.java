@@ -1,11 +1,23 @@
 public class Solution {
    public static void main(String[] args) {
     patterns1(4);
+    System.out.println("Next pattern");
+    patterns2(5);
    }
 
    static void patterns1(int num) {
       for (int row = 0; row <= num; row++) {
         for (int col = 0; col < row ; col++) {
+           System.out.print("*");
+        }
+       System.out.println();
+      }
+   }
+
+   
+   static void patterns2(int num) {
+      for (int row = 0; row <= num; row++) {
+        for (int col = 0; col < num ; col++) {
            System.out.print("*");
         }
        System.out.println();
