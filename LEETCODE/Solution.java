@@ -3,11 +3,13 @@ public class Solution {
     patterns1(4);
     System.out.println("Next pattern");
     patterns2(5);
+    System.out.println("Next pattern");
+    patterns3(5);
    }
 
    static void patterns1(int num) {
-      for (int row = 0; row <= num; row++) {
-        for (int col = 0; col < row ; col++) {
+      for (int row = 1; row <= num; row++) {
+        for (int col = 1; col < row ; col++) {
            System.out.print("*");
         }
        System.out.println();
@@ -16,8 +18,18 @@ public class Solution {
 
    
    static void patterns2(int num) {
+      for (int row = 1; row <= num; row++) {
+        for (int col = 1; col < num ; col++) {
+           System.out.print("*");
+        }
+       System.out.println();
+      }
+   }
+
+   
+   static void patterns3(int num) {
       for (int row = 0; row <= num; row++) {
-        for (int col = 0; col < num ; col++) {
+        for (int col = 1; col < num - row + 1; col++) {
            System.out.print("*");
         }
        System.out.println();
