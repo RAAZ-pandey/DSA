@@ -5,6 +5,8 @@ public class Solution {
       patterns2(5);
       System.out.println("Next pattern");
       patterns3(5);
+      System.out.println("Next pattern");
+      patterns4(5);
    }
 
    static void patterns1(int num) {
@@ -31,6 +33,15 @@ public class Solution {
       for (int row = 1; row <= num; row++) {
         for (int col = 1; col < num - row + 1; col++) {
            System.out.print("*");
+        }
+       System.out.println();
+      }
+   }
+
+    static void patterns4(int num) {
+      for (int row = 1; row <= num; row++) {
+        for (int col = 1; col < row ; col++) {
+           System.out.print(col);
         }
        System.out.println();
       }
