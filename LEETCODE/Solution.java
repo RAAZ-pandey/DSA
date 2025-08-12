@@ -40,7 +40,16 @@ public class Solution {
 
     static void patterns4(int num) {
       for (int row = 1; row <= num; row++) {
-        for (int col = 1; col <= row ; col++) {
+        for (int col = 1; col < row ; col++) {
+           System.out.print(col);
+        }
+       System.out.println();
+      }
+   }
+
+    static void patterns5(int num) {
+      for (int row = 1; row < 2 * num; row++) {
+        for (int col = 1; col < row ; col++) {
            System.out.print(col);
         }
        System.out.println();
