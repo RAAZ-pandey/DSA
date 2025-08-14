@@ -8,6 +8,7 @@ public class FindUnique {
     int unique = 0;
 
     for (int n: arr) {
+      //usinf XOR operator to check for duolicates
        unique ^= n;
     }
     return unique;
