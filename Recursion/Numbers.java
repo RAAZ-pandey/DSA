@@ -27,11 +27,12 @@ public class Numbers {
   //   System.out.println(n);
   // }
 
-    static void nums(int n) {
+  static void nums(int n) {
     
     if (n == 0) {
       return;
     }
+    
     System.out.println(n);
     nums(n - 1);
     System.out.println(n);
