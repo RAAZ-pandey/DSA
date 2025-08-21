@@ -2,7 +2,7 @@ package Recursion;
 
 public class Numbers {
   public static void main(String[] args) {
-    nums(8);
+    nums(80);
   }
 
   static void nums(int n) {
