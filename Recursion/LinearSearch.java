@@ -7,6 +7,7 @@ public class LinearSearch {
     int target = 11;
     System.out.println(search(arr, target, 0));
     System.out.println(search1(arr, target, 0));
+    System.out.println(search2(arr, target, arr.length-1));
   }
   
 
@@ -21,6 +22,20 @@ public class LinearSearch {
       return index;
     } else {
       return search(arr, target, index + 1);
+    }
+    
+  }
+
+  static int search2(int[] arr, int target, int index){
+
+    if(index == 0){
+      return -1;
+    }
+
+    if(arr[index] == target){
+      return index;
+    } else {
+      return search(arr, target, index - 1);
     }
     
   }
