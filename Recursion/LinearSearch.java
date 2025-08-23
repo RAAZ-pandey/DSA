@@ -9,6 +9,8 @@ public class LinearSearch {
     System.out.println(search1(arr, target, 0));
   }
   
+
+  // return the index of element if it is present in the array
   static int search(int[] arr, int target, int index){
 
     if(index == arr.length){
@@ -23,6 +25,7 @@ public class LinearSearch {
     
   }
 
+  // return true/false based on presence of target element in the array
   static boolean search1(int[] arr, int target, int index){
 
     if(index == arr.length){
