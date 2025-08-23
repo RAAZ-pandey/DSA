@@ -26,6 +26,7 @@ public class LinearSearch {
     
   }
 
+  // search from and return the index of element if it is present in the array
   static int search2(int[] arr, int target, int index){
 
     if(index == 0){
