@@ -11,10 +11,7 @@ public class LinearsList {
     System.out.println(ans);
   }
   
-
- 
-
- 
+  // searching all indexes at which target element is present and returning it in a list 
   static ArrayList<Integer> searchAll(int[] arr, int target, int index, ArrayList<Integer> list ) {
      if(index == arr.length){
       return list;
