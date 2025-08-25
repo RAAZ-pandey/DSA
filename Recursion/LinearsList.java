@@ -22,4 +22,23 @@ public class LinearsList {
     }
     return searchAll(arr, target, index + 1, list);
   }
+
+    // searching all indexes at which target element is present and returning it in a list 
+  static ArrayList<Integer> searchAll1(int[] arr, int target, int index) {
+
+    ArrayList<Integer> list = new ArrayList<>();
+
+     if(index == arr.length){
+      return list;
+    }
+
+    if(arr[index] == target){
+       list.add(index);
+    }
+    ArrayList<Integer> findBelow = searchAll1(arr, target, index + 1);
+    list.addAll(findBelow);
+    
+    return list;
+  }
+
 }
