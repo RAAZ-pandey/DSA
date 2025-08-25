@@ -9,6 +9,8 @@ public class LinearsList {
 
     ArrayList<Integer> ans = searchAll(arr, target, 0, new ArrayList<>());
     System.out.println(ans);
+    ArrayList<Integer> ans1 = searchAll1(arr, target, 0);
+    System.out.println(ans1);
   }
   
   // searching all indexes at which target element is present and returning it in a list 
