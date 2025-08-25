@@ -34,6 +34,7 @@ public class LinearsList {
       return list;
     }
 
+    // this will contain answer for that function only
     if(arr[index] == target){
        list.add(index);
     }
