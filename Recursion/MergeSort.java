@@ -35,8 +35,23 @@ public class MergeSort {
         mix[k] = second[j];
         j++;
       }
+      k++;
     }
+
+    while (i < first.length) {
+      mix[k] = first[i];
+      i++;
+      k++;
+    }
+
+    while (j < second.length) {
+      mix[k] = second[j];
+      j++;
+      k++;
+    }
+
+    return mix;
   }
 
-  
+
 }
