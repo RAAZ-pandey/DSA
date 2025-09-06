@@ -21,6 +21,7 @@ public class QuickSort {
 
      while (s <= e) {
        
+      // also a reason why if it is already sorted it will not swap
        while(arr[s] < pivot){
         s++;
        }
@@ -37,6 +38,8 @@ public class QuickSort {
         e--;
        }
      }
+
+     // now pivot is at correct index, please sort two halfes now
 
      sort(arr, low, e);
      sort(arr, s, high);
