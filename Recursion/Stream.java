@@ -3,8 +3,10 @@ package Recursion;
 public class Stream {
   public static void main(String[] args) {
     skip("", "baaoasaas");
+    System.out.println(skip1("aaRaiabaihaaaua"));
   }
 
+  // printing the answer string after skiping a specific character
   static void skip(String p, String q) {
     if(q.isEmpty()){
       System.out.println(p);
@@ -20,6 +22,8 @@ public class Stream {
     }
   }
 
+  // returning answer after skiping a specific character
+  
   static String skip1(String q) {
     if(q.isEmpty()){
       return "";
