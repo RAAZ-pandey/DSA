@@ -21,7 +21,7 @@ public class Permutation {
         }
     }
 
-     static ArrayList<String> permutationsList(String p, String up) {
+  static ArrayList<String> permutationsList(String p, String up) {
         if (up.isEmpty()) {
             ArrayList<String> list = new ArrayList<>();
             list.add(p);
