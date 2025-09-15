@@ -24,6 +24,7 @@ public class Main {
         list1.insertFirst(8);
         list1.insertFirst(17);
         list1.insertLast(99);
-          list1.display();
+        list1.insert(8, 65);
+        list1.display();
     }
 }
