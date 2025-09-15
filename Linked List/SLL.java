@@ -79,6 +79,18 @@ public class SLL {
         size--;
         return val;
     }
+
+     public Node find(int value) {
+        Node node = head;
+        while (node != null) {
+            if (node.value == value) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
         
     public Node get(int index) {
         Node node = head;
