@@ -17,5 +17,11 @@ public class Main {
         list.display();
         list.insertRec(88, 2);
         list.display();
+
+        DLL list1 = new DLL();
+        list1.insertFirst(3);
+        list1.insertFirst(2);
+        list1.insertFirst(8);
+        list1.insertFirst(17);
     }
 }
