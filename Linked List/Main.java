@@ -9,5 +9,7 @@ public class Main {
         list.insert(100, 3);
 
         list.display();
+          list.insertRec(88, 2);
+        list.display();
     }
 }
