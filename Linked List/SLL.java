@@ -67,6 +67,13 @@ public class SLL {
             return node;
         }
         
+    public Node get(int index) {
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
 
     public int deleteFirst() {
         int val = head.value;
