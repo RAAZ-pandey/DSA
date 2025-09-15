@@ -66,16 +66,27 @@ public class SLL {
             node.next = insertRec(val, index-1, node.next);
             return node;
         }
+        
 
-
-        public void display() {
-            Node temp = head;
-            while (temp != null) {
-                System.out.print(temp.value + " -> ");
-                temp = temp.next;
-            }
-            System.out.println("END");
+    public int deleteFirst() {
+        int val = head.value;
+        head = head.next;
+        if (head == null) {
+            tail = null;
         }
+        size--;
+        return val;
+    }
+
+
+    public void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.value + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("END");
+    }
 
 
 
