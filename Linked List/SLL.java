@@ -80,6 +80,22 @@ public class SLL {
         return val;
     }
 
+    public int delete(int index) {
+        if (index == 0) {
+            return deleteFirst();
+        }
+        if (index == size - 1) {
+            return deleteLast();
+        }
+
+        Node prev = get(index - 1);
+        int val = prev.next.value;
+
+        prev.next = prev.next.next;
+        size--;
+        return val;
+    }
+
      public Node find(int value) {
         Node node = head;
         while (node != null) {
