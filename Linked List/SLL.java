@@ -66,6 +66,19 @@ public class SLL {
             node.next = insertRec(val, index-1, node.next);
             return node;
         }
+
+      public int deleteLast() {
+        if (size <= 1) {
+            return deleteFirst();
+        }
+
+        Node secondLast = get(size - 2);
+        int val = tail.value;
+        tail = secondLast;
+        tail.next = null;
+        size--;
+        return val;
+    }
         
     public Node get(int index) {
         Node node = head;
