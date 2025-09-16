@@ -33,5 +33,7 @@ public class Main {
         list2.insert(19);
         list2.insert(75);
         list2.display();
+        list2.delete(19);
+        list2.display();
     }
 }
