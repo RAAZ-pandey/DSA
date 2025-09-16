@@ -26,5 +26,11 @@ public class Main {
         list1.insertLast(99);
         list1.insert(8, 65);
         list1.display();
+
+        CLL list2 = new CLL();
+        list2.insert(23);
+        list2.insert(3);
+        list2.insert(19);
+        list2.insert(75);
     }
 }
