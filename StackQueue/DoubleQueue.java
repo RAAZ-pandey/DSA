@@ -1,3 +1,5 @@
+package StackQueue;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -18,3 +20,4 @@ public class DoubleQueue {
 
   }  
 }
+
