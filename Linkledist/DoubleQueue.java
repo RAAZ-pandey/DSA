@@ -14,6 +14,7 @@ public class DoubleQueue {
     System.out.println(deque.remove());
     System.out.println(deque.removeLast());
     System.out.println(deque.removeFirst());
+    System.out.println(deque.peek());
 
   }  
 }
