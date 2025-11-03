@@ -10,5 +10,10 @@ public class DoubleQueue {
     deque.addFirst(5);
     deque.addLast(15);
     deque.add(20);
+
+    System.out.println(deque.remove());
+    System.out.println(deque.removeLast());
+    System.out.println(deque.removeFirst());
+
   }  
 }
