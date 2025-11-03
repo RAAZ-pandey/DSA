@@ -36,6 +36,13 @@ public class InbuiltStackingQueue {
       queue.add(26);
       queue.add(27);
 
-    
+      //System.out.println(queue.peek());
+      System.out.println(queue.remove());
+      System.out.println(queue.remove());
+      System.out.println(queue.remove());
+      System.out.println(queue.remove());
+      System.out.println(queue.remove());
+      System.out.println(queue.remove());
+      System.out.println(queue.remove());
   }
 }
