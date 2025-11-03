@@ -31,7 +31,7 @@ public class CustomStack {
     // int removed = data[ptr];
     // ptr--;
     // return removed;
-    return data[ptr];
+    return data[ptr--];
   }
 
    public int peek() throws StackException {
