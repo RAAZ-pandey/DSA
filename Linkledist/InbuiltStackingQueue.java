@@ -24,6 +24,18 @@ public class InbuiltStackingQueue {
       System.out.println(stack.pop());
       System.out.println(stack.pop());
       
-      
+      System.err.println("now the Queue starts from  here");
+      // Internal implemetation of Queue usining inbuilt functions
+      Queue<Integer> queue = new LinkedList<>(); 
+
+      queue.add(21);
+      queue.add(22);
+      queue.add(23);
+      queue.add(24);
+      queue.add(25);
+      queue.add(26);
+      queue.add(27);
+
+    
   }
 }
