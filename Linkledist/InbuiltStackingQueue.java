@@ -1,7 +1,10 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
-public class StackingQueue {
+public class InbuiltStackingQueue {
    public static void main(String[] args) {
+      // Internal implemetation of stack usining inbuilt functions
       Stack<Integer> stack = new Stack<>();
 
       stack.push(95);
@@ -21,6 +24,6 @@ public class StackingQueue {
       System.out.println(stack.pop());
       System.out.println(stack.pop());
       
-
+      
   }
 }
