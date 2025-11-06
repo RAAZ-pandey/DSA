@@ -13,5 +13,6 @@ public class QueueMain {
 
         System.out.println(queue.remove());
         queue.display();
+        System.out.println(queue.front());
     }
 }
